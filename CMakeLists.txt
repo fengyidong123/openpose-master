@@ -969,18 +969,6 @@ endif (Caffe_FOUND)
 message(STATUS "Download the models.")
 
 # URL to the models
-set(OPENPOSE_URL "http://posefs1.perception.cs.cmu.edu/OpenPose/models/")
-
-download_model("BODY_25" ${DOWNLOAD_BODY_25_MODEL} pose/body_25/pose_iter_584000.caffemodel
-  78287B57CF85FA89C03F1393D368E5B7) # Body (BODY_25)
-download_model("body (COCO)" ${DOWNLOAD_BODY_COCO_MODEL} pose/coco/pose_iter_440000.caffemodel
-  5156d31f670511fce9b4e28b403f2939) # Body (COCO)
-download_model("body (MPI)" ${DOWNLOAD_BODY_MPI_MODEL} pose/mpi/pose_iter_160000.caffemodel
-  2ca0990c7562bd7ae03f3f54afa96e00) # Body (MPI)
-download_model("face" ${DOWNLOAD_FACE_MODEL} face/pose_iter_116000.caffemodel
-  e747180d728fa4e4418c465828384333) # Face
-download_model("hand" ${DOWNLOAD_HAND_MODEL} hand/pose_iter_102000.caffemodel
-  a82cfc3fea7c62f159e11bd3674c1531) # Hand
 
 message(STATUS "Models Downloaded.")
 
